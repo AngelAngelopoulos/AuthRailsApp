@@ -1,0 +1,20 @@
+<div class="signup">
+  <div class="container">
+    <h1>Sign up</h1>
+      <%= form_for(@user, :authenticity_token => false) do |f| %>  
+    <div class="field"> 
+      <%= f.label 'First Name' %><br> 
+      <%= f.text_field :first_name %>
+      <%= f.label 'Last Name'  %><br>
+      <%= f.text_field :last_name %>
+      <%= f.label 'Email' %><br>
+      <%= f.text_field :email %>
+      <%= f.label 'Password' %>
+      <%= f.password_field :password %>
+    </div> 
+    <div class="actions"> 
+      <%= f.submit "New" %> 
+    </div> 
+  <% end %> 
+  </div>
+</div>
